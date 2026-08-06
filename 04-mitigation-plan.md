@@ -14,6 +14,8 @@ This approach reflects the principle that effective GRC is not about eliminating
 
 **Risk statement:** Unauthorized users gain access to sensitive customer information after the CRM migration.
 
+**Risk Owner:** Chief Information Security Officer
+
 **Mitigation approach:** *Mitigate.* **Rationale:** Avoiding the migration would prevent the organization from achieving its modernization objectives, while transferring the risk would not eliminate accountability for protecting customer data. A mitigation strategy allows the business to proceed with the migration while reducing the likelihood and impact of unauthorized access through stronger identity and access management controls.
 
 **Controls/actions:**
@@ -35,8 +37,6 @@ This approach reflects the principle that effective GRC is not about eliminating
 | Cloud Security Engineer | Configure cloud security settings           |
 | IT Security Team        | Continuous monitoring and incident response |
 
-## Risk Owner:
-Chief Information Security Officer
 
 **Effectiveness metrics:**
 
@@ -49,6 +49,7 @@ Chief Information Security Officer
 - Target: Access-related incidents reduced by 80%.
 - 
 **Residual risk:** Low
+
 Although no environment is entirely risk-free, implementing layered identity controls, continuous monitoring, and regular access reviews significantly reduces both the likelihood and potential impact of unauthorized access.
 
 ---
@@ -56,6 +57,8 @@ Although no environment is entirely risk-free, implementing layered identity con
 ## Risk 2: Exposure of customer data during migration
 
 **Risk statement:** Sensitive customer information is exposed while migrating data to the cloud.
+
+**Risk Owner:** Data Protection Officer (DPO)
 
 **Mitigation approach:** *Mitigate.* **Rationale:** During migration, sensitive customer information is temporarily exposed through data movement processes. Encrypting data, limiting access, and validating integrity reduce the likelihood of disclosure while maintaining compliance with data protection requirements.
 
@@ -67,7 +70,6 @@ Although no environment is entirely risk-free, implementing layered identity con
 - **Conduct security testing and migration validation before production go-live** to identify weaknesses before customer data becomes operational.
 - **Maintain detailed audit logs throughout the migration process** to support monitoring, investigations, and regulatory compliance.
 
-
 **Responsible stakeholders:** Data Protection Officer (DPO), Database Administrator, Cloud Migration Team, Security Operations Centre (SOC)
 
 | Stakeholder | Responsibility |
@@ -76,10 +78,6 @@ Although no environment is entirely risk-free, implementing layered identity con
 | Cloud Migration Team | Executes the migration securely and follows approved migration procedures. |
 | Database Administrator | Protects database integrity, manages backups, and validates successful migration. |
 | Security Operations Centre (SOC) | Monitors migration activities, investigates alerts, and responds to potential security incidents. |
-
-## Risk Owner:
-Data Protection Officer
-
 
 **Effectiveness metrics:**
 | Metric | Target |
@@ -90,8 +88,8 @@ Data Protection Officer
 | Critical security findings before production deployment | **Zero unresolved findings** |
 | Migration activities recorded in audit logs | **100%** |
 
-
 **Residual risk:** Low
+
 Although the migration process can never be completely risk-free, implementing strong encryption, access controls, continuous monitoring, and data validation significantly reduces the likelihood of sensitive customer information being exposed. The remaining residual risk is considered acceptable provided these controls are consistently maintained and monitored throughout the migration lifecycle.
 
 ---
@@ -100,8 +98,9 @@ Although the migration process can never be completely risk-free, implementing s
 
 **Risk statement:** Cloud storage is configured incorrectly, exposing sensitive customer information.
 
-**Mitigation approach:** *Mitigate.* **Rationale:** Cloud misconfigurations remain one of the most common causes of cloud-related data breaches. During a cloud migration, storage resources, access permissions, and security settings are frequently created or modified, increasing the likelihood of configuration errors. Avoiding the migration would prevent the organization from realizing the operational and scalability benefits of cloud adoption, while transferring the risk to the cloud service provider would not remove the organization's responsibility for securing its own cloud environment under the shared responsibility model. A mitigation strategy reduces the likelihood of accidental data exposure by implementing secure configuration standards, continuous monitoring, and regular security reviews.
+**Risk Owner:** Cloud Security Manager
 
+**Mitigation approach:** *Mitigate.* **Rationale:** Cloud misconfigurations remain one of the most common causes of cloud-related data breaches. During a cloud migration, storage resources, access permissions, and security settings are frequently created or modified, increasing the likelihood of configuration errors. Avoiding the migration would prevent the organization from realizing the operational and scalability benefits of cloud adoption, while transferring the risk to the cloud service provider would not remove the organization's responsibility for securing its own cloud environment under the shared responsibility model. A mitigation strategy reduces the likelihood of accidental data exposure by implementing secure configuration standards, continuous monitoring, and regular security reviews.
 
 **Controls/actions:**
 - **Implement secure cloud configuration baselines** aligned with industry best practices to ensure storage resources are securely configured before deployment.
@@ -121,9 +120,6 @@ Although the migration process can never be completely risk-free, implementing s
 | DevSecOps Engineer | Integrates security checks into deployment pipelines and automates configuration validation. |
 | Internal Audit Team | Performs periodic reviews to verify compliance with internal policies and regulatory requirements. |
 
-**Risk Owner:** Cloud Security Manager
-
-
 **Effectiveness metrics:**
 | Metric | Target |
 |---------|--------|
@@ -133,12 +129,7 @@ Although the migration process can never be completely risk-free, implementing s
 | Mean Time to Remediate (MTTR) configuration issues | **Less than 24 hours** |
 | Automated configuration monitoring coverage | **100% of cloud storage resources** |
 
-
 **Residual risk:** Low
+
 While configuration errors can never be completely eliminated, implementing secure configuration baselines, continuous posture monitoring, automated alerting, and periodic security reviews significantly reduces the likelihood of sensitive customer information being unintentionally exposed. Any remaining risk is considered acceptable provided these controls are continuously monitored, reviewed, and improved as the cloud environment evolves.
 
----
-
-## Summary
-
-All three highest-rated risks were treated with a **mitigate** strategy rather than avoid, transfer, or accept — reflecting that the migration itself is a business necessity, but the specific exposure paths (access, transit, configuration) are controllable. Each plan is anchored to named stakeholders and quantifiable metrics so effectiveness can be tracked post-migration rather than assumed.
