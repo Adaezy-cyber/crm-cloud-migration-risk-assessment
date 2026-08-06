@@ -88,8 +88,8 @@ It also highlighted that cloud security depends just as much on governance, acce
 Prepared by me, **Adaeze Elizabeth Adeteye**, This project forms part of my growing Governance, Risk, and Compliance portfolio
 
 ## References
-NIST Cybersecurity Framework (CSF)
-NIST SP 800-30 Risk Assessment Guide
-ISO 31000 Risk Management Principles
-Nigeria Data Protection Act (NDPA) 2023
+- NIST Cybersecurity Framework (CSF)
+- NIST SP 800-30 Risk Assessment Guide
+- ISO 31000 Risk Management Principles
+- Nigeria Data Protection Act (NDPA) 2023
 
