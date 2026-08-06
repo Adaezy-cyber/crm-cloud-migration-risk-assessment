@@ -1,0 +1,11 @@
+ID,Risk Statement,Risk Category,Threat Source/Actor,Vulnerability Exploited
+R1,Unauthorized individuals may gain access to customer financial records after the CRM is migrated to the cloud,Technical,External attackers,Weak Identity and Access Management (IAM) controls
+R2,Customer data could be exposed while it is being transferred to the cloud environment,Technical,Cybercriminals,Data is not encrypted during migration
+R3,Sensitive information such as customer PII may become publicly accessible because of cloud misconfiguration,Technical,Cloud administrator error,Incorrect storage permissions
+R4,Employees may accidentally delete or modify important customer records during migration,Operational,Internal staff,Poor backup and change management procedures
+R5,A ransomware attack could interrupt the migration process and make customer data unavailable,Security,Cybercriminals,Unpatched systems and weak endpoint security
+R6,The organization may fail to meet NDPA requirements during the migration,Compliance,Regulatory bodies,Inadequate compliance planning
+R7,Employees with excessive privileges could misuse or access customer information unnecessarily,Operational,Insider threat,Lack of least privilege and periodic access reviews
+R8,The cloud provider could experience downtime affecting access to the CRM system,Operational,Cloud service provider,Limited redundancy and disaster recovery planning
+R9,Weak security controls at the cloud provider may expose customer information through a third-party breach,Third-party,Cloud vendor,Inadequate vendor security assurance
+R10,A data breach could reduce customer confidence and negatively affect the company's reputation,Reputational,External attackers and public scrutiny,Weak incident response processes
