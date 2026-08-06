@@ -71,10 +71,10 @@ If these risks are not managed effectively, the organization could experience:
 - Stakeholder Accountability
   
 **Security**
--IAM
--RBAC
--MFA
--CSPM
+- IAM
+- RBAC
+- MFA
+- CSPM
 - Encryption
 - Least Privilege
 
@@ -85,7 +85,7 @@ It also highlighted that cloud security depends just as much on governance, acce
 
 ## About
 
-Prepared by Adaeze Elizabeth Adeteye, This project forms part of my growing Governance, Risk, and Compliance portfolio
+Prepared by me, **Adaeze Elizabeth Adeteye**, This project forms part of my growing Governance, Risk, and Compliance portfolio
 
 ## References
 NIST Cybersecurity Framework (CSF)
