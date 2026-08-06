@@ -64,10 +64,12 @@ If these risks are not managed effectively, the organization could experience:
 - Risk Assessment
 - Risk Prioritization
 - Risk Treatment
+  
 **Compliance**
 - NDPA
 - Data Protection Principles
 - Stakeholder Accountability
+  
 **Security**
 -IAM
 -RBAC
